@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HoliAsk!</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/mapa.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Twoje miejsce wakacji</h1>
+    </div>
+    
+    <div class="content">
+        <div class="mapa">{{ graph_1 | safe }}</div>
+        {% if nazwa_miejsca %}
+            <div class="info">
+                {% for i in range(nazwa_miejsca|length) %}
+                <div class="header">
+                    <h1> {{i+1}}. {{ nazwa_miejsca[i] }}</h1>
+                </div>
+                <div class="opis_img">
+                        <p>{{ opis_miejsca[i] }}</p>
+                        <img src="{{ url_for('static', filename='images/' + zdjecie[i]) }}" class="image" alt="Obraz" />
+                </div>  
+            {% endfor %}
+        {% else %}
+            <p>Brak dostępnych miejsc.</p>
+        {% endif %}
+        </div>
+    </div>
+    
+    <a href="{{ url_for('home.home') }}">Powrót</a>
+</body>
+
+<script>
+   
+</script>
+</html>
+

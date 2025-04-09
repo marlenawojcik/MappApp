@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoliAsk!</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css">
+
+    
+</head>
+</head>
+<body>
+    <div class="container">
+        <h2>HoliAsk!</h2>
+        <form id="wakacjeForm" action="{{ url_for('map.map') }}" method="post"> 
+            <!-- Pytanie 1 -->
+            <label for="preferencja1">Kontynent</label>
+            <select id="preferencja1" name="preferencja1" required>
+                <option value="Europa">Europa</option>
+                <option value="Azja">Azja</option>
+                <option value="Ameryka Północna">Ameryka Północna</option>
+                <option value="Ameryka Południowa">Ameryka Południowa</option>
+                <option value="Australia">Australia</option>
+                <option value="Afryka">Afryka</option>
+                <option value="obojętnie">obojętnie</option>
+            </select>
+
+            <!-- Pytanie 2 -->
+            <label for="preferencja2">Klimat</label>
+            <select id="preferencja2" name="preferencja2" required>
+                <option value="umiarkowany">umiarkowany</option>
+                <option value="śródziemnomorski">śródziemnomorski</option>
+                <option value="zwrotnikowy/tropikalny">zwrotnikowy/tropikalny</option>
+                <option value="suchy">suchy</option>
+                <option value="górski">górski</option>
+                <option value="okołobiegunowy">okołobiegunowy</option>
+            </select>
+            
+            <!-- Pytanie 3 -->
+            <label for="preferencja3">Aktywności</label>
+            <select id="preferencja3" name="preferencja3" required>
+                <option value="Odpoczynek na plaży">Odpoczynek na plaży</option>
+                <option value="Trekking/Wspinaczka górska">Trekking/Wspinaczka górska</option>
+                <option value="Sporty wodne">Sporty wodne</option>
+                <option value="Czas z naturą">Czas z naturą</option>
+                <option value="Jazda na nartach">Jazda na nartach</option>
+                <option value="Poznawanie ciekawych miast i zabytków - zwiedzanie">Poznawanie ciekawych miast i zabytków - zwiedzanie</option>
+                <option value="W poszukiwaniu zorzy polarnej">W poszukiwaniu zorzy polarnej</option>
+            </select> 
+            <!-- Pytanie 4 -->
+            <label for="preferencja4">Popularność turystyczna miejsca</label>
+            <select id="preferencja4" name="preferencja4" required>
+                <option value="najchętniej odwiedzane">najchętniej odwiedzane</option>
+                <option value="duża popularność">duża popularność</option>
+                <option value="średnia popularność">średnia popularność</option>
+                <option value="mniejsza popularność">mniejsza popularność</option>
+            </select> 
+
+            <!-- Przycisk do przesłania formularza -->
+            <button type="submit">Prześlij</button>
+        </form>
+    </div>
+
+    
+</body>
+<script>
+
+</script>
+</html>

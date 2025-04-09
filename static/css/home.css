@@ -1,0 +1,74 @@
+/* wyglad strony formularza */
+body, h1, h2, p, select, label, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:aliceblue;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+    
+}
+
+label {
+    font-size: 16px;
+    color:aliceblue;
+    text-transform: uppercase;
+    
+}
+
+select, input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    background-color: rgb(255, 195, 234)
+}
+
+button {
+    background-color: rgb(255, 72, 212);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #b70089;
+}
+
+/* Dodatkowe style dla przycisków radio */
+input[type="radio"] {
+    margin-right: 5px;
+}

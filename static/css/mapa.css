@@ -1,0 +1,53 @@
+body{
+    /* max-width: 1200px; */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+img{
+    width: 400px;
+}
+
+
+div.header{
+    height: 150px ;
+    background-image: url('../images/background3.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 100px;
+    text-transform: uppercase;
+    color: white ;
+}
+
+.opis_img{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.opis_img p{
+    flex: 1;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.opis_img img{
+    flex: 1
+}
